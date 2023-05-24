@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Page 2</title>
+</head>
+<body>
+  <h1>Page 2: Additional Information</h1>
+  <form action="success.html" method="post">
+    <label for="location">Location:</label>
+    <input type="text" name="location" required><br>
+
+    <label for="age">Age:</label>
+    <input type="text" name="age" required><br>
+
+    <label for="university">University:</label>
+    <input type="text" name="university" required><br>
+
+    <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
